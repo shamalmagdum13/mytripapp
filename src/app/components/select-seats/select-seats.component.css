@@ -1,0 +1,51 @@
+form {
+    padding: 20px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    margin-bottom: 40px;
+}
+
+.total {
+    padding: 4px;
+    margin: 4px;
+}
+
+.seatCheckbox {
+    margin-left: 20px;
+}
+
+.seatCheckbox input[type="checkbox"] {
+    display: none;
+}
+
+.seatCheckbox span:before {
+    width: 1em;
+    height: 1em;
+    content: url('../../../assets/images/seats-img.jpeg');
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.seatCheckbox input[type='checkbox']:checked~span:before {
+    content: url('../../../assets/images/seat-full-img.jpeg');
+}
+
+.seatCheckbox input[type='checkbox']:disabled~span:before {
+    content: url('../../../assets/images/seat-disable-img.jpeg');
+}
+
+.alert {
+    height: 80px;
+}
+
+.btn-block {
+    max-width: 250px;
+}
+
+.table {
+    border: 1px solid rgb(240 237 237);
+}
+
+.steering-img {
+    height: 2rem;
+    margin-left: 15.255555rem;
+}

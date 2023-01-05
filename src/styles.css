@@ -1,0 +1,30 @@
+.main-container {
+    margin-top: 56px;
+    margin-bottom: 40px;
+}
+
+.navbar-bgc,
+table>thead {
+    background-color: #d74f57;
+}
+
+table>tbody>tr:hover {
+    background-color: rgb(248, 248, 255);
+}
+
+.btn-info{
+    background-color: #d74f57;
+    border-color: #d74f57;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #df3e48;
+    border-color: #df3e48;
+}
+
+.btn-info:focus{
+    color: #fff;
+    background-color: #df3e48;
+    border-color: #df3e48;
+}

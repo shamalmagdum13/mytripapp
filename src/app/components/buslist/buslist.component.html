@@ -1,0 +1,49 @@
+<div class="container main-container">
+    <div class="row justify-content-center">
+        <ng-container *ngIf="BusList;else endpointsmissing">
+            <div class="col-sm-12">
+                <button class="btn btn-info" (click)='navigateBack()'>Back</button>
+            </div>
+            <div class="col col-lg-8 col-sm-12" *ngIf="BusList.length; else busesUnavailable">
+                <div class="row justify-content-center">
+                    <p class="lead">Available buses</p>
+                </div>
+                <table class="table table-bordered">
+                    <thead class="thead-bg">
+                        <tr>
+                            <th scope="col" *ngFor="let key of keys">{{key}}</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let bus of BusList">
+                            <td *ngFor="let key of keys">{{bus[key]}}</td>
+                            <td>
+                                <a type="button" [routerLink]="['/buses', bus.id]" class="btn btn-danger viewseats">
+                                    View Seats
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <ng-template #busesUnavailable>
+                <h4>
+                    oops! currently No buses are available running on this route.
+                </h4>
+            </ng-template>
+        </ng-container>
+        <ng-template #endpointsmissing>
+            <div class="col">
+                <div class="alert alert-warning" role="alert">
+                    You have not selected your journey endpoints.
+                    Go to home page to plan your journey and find buses.
+                </div>
+                <!-- <a class="btn btn-primary" routerLink="" role="button">Plan journey</a> -->
+            </div>
+        </ng-template>
+    </div>
+</div>
+
+<!-- *ngIf="BusList;else endpointsmissing" -->
+<!-- *ngIf="BusList.length; else busesUnavailable" -->

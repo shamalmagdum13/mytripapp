@@ -1,0 +1,34 @@
+<div class="container main-container">
+  <div class="row justify-content-center" *ngIf="ticket">
+    <div class="col col-lg-6 col-md-8 col-sm-12">
+
+      <strong> Hi
+        {{ticket['Passenger Details']['username'] | myUpper:'firstname' }},
+        you have successfully book ticket
+      </strong>
+
+      <div class="card bg-light mb-3">
+        <h5 class="card-navbar navbar-bgc">Your Journey Details</h5>
+
+        <div class="card-body">
+          <h5 class="card-title">{{ticket['Source']}} To {{ticket['Destination']}}</h5>
+          <p class="card-text">Date & Time : {{ticket['Date'] | date: 'mediumDate'}} | {{ticket['Departure Time']}}</p>
+          <p class="card-text">{{ticket['Bus Name']}}</p>
+          <p class="card-text">Coach Type : {{ticket['Coach Type']}}</p>
+
+          <p class="card-text">Seats No (
+            <span *ngFor="let seat of ticket['Seat No']">
+              {{seat}}
+            </span>
+            )
+          </p>
+
+        </div>
+
+      </div>
+      <button type="button" class="btn btn-info" [routerLink]="['../../viewticket',ticket['id']]">
+        View bus ticket
+      </button>
+    </div>
+  </div>
+</div>

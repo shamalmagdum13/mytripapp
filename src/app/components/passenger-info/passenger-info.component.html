@@ -1,0 +1,60 @@
+<div class="container main-container">
+    <div class="row justify-content-md-center" *ngIf="journey">
+        <div class="col col-lg-7 col-md-8 col-sm-12">
+            <div class="card">
+                <h5 class="card-navbar navbar-bgc">Please Fill Passenger Details</h5>
+                <div class="card-body">
+                    <form [formGroup]="passengerInfo" (ngSubmit)="onFormSubmit()">
+
+                        <div class="form-group row">
+                            <label for="username" class="col-sm-3 col-form-label">User Name</label>
+                            <div class="col">
+                                <input type="text" class="form-control" id="username" name="username"
+                                    formControlName="username">
+                                <div *ngIf="f['username'].invalid && (f['username'].dirty || f['username'].touched || submitted)"
+                                    class="text-danger">
+                                    <small *ngIf="f['username'].errors?.['required']">User Name is required</small>
+                                    <small *ngIf="f['username'].errors?.['minlength']">
+                                        Minimum 2 characters required.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="mobilenumber" class="col-sm-3 col-form-label">Mobile Number</label>
+                            <div class="col">
+                                <input type="tel" class="form-control" id="mobilenumber" name="mobilenumber"
+                                    formControlName="mobilenumber">
+                                <div *ngIf="f['mobilenumber'].invalid && (f['mobilenumber'].dirty || f['mobilenumber'].touched || submitted)"
+                                    class="text-danger">
+                                    <small *ngIf="f['mobilenumber'].errors?.['required']">
+                                        Phone number is required.
+                                    </small>
+                                    <small *ngIf="f['mobilenumber'].errors?.['pattern']">
+                                        Phone number Must consist of exactly 10 digits
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-3 col-form-label">Email</label>
+                            <div class="col">
+                                <input type="email" class="form-control" id="email" name="email"
+                                    formControlName="email">
+                                <div *ngIf="f['email'].invalid && (f['email'].dirty || f['email'].touched || submitted)"
+                                    class="text-danger">
+                                    <small *ngIf="f['email'].errors?.['required']">Email is required.</small>
+                                    <small *ngIf="f['email'].errors?.['email']">Invalid Email.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button class="btn btn-info" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

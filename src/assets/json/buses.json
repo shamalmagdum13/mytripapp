@@ -1,0 +1,200 @@
+[
+    {
+        "id": 1,
+        "Bus Name": " Konduskar Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Pune",
+        "Destination": "Mumbai",
+        "Fare": 100,
+        "Coach Type": "A1-AC",
+        "seats_available": 10,
+        "bookings": {}
+    },
+    {
+        "id": 2,
+        "Bus Name": " Konduskar Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Pune",
+        "Destination": "Goa",
+        "Fare": 200,
+        "Coach Type": "AC",
+        "seats_available": 20,
+        "bookings": {}
+    },
+    {
+        "id": 3,
+        "Bus Name": " Konduskar Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Pune",
+        "Destination": "Delhi",
+        "Fare": 300,
+        "Coach Type": "AC",
+        "seats_available": 13,
+        "bookings": {}
+    },
+    {
+        "id": 4,
+        "Bus Name": " Konduskar Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Pune",
+        "Destination": "Nagpur",
+        "Fare": 300,
+        "Coach Type": "AC",
+        "seats_available": 15,
+        "bookings": {}
+    },
+    {
+        "id": 5,
+        "Bus Name": "Balaji Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Mumbai",
+        "Destination": "Pune",
+        "Fare": 500,
+        "Coach Type": "Non AC",
+        "seats_available": 12,
+        "bookings": {}
+    },
+    {
+        "id": 6,
+        "Bus Name": "Balaji Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Mumbai",
+        "Destination": "Goa",
+        "Fare": 600,
+        "Coach Type": "Non AC",
+        "seats_available": 15,
+        "bookings": {}
+    },
+    {
+        "id": 7,
+        "Bus Name": "Balaji Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Mumbai",
+        "Destination": "Delhi",
+        "Fare": 700,
+        "Coach Type": "Non AC",
+        "seats_available": 5,
+        "bookings": {}
+    },
+    {
+        "id": 8,
+        "Bus Name": "Balaji Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Mumbai",
+        "Destination": "Nagpur",
+        "Fare": 800,
+        "Coach Type": "Non AC",
+        "seats_available": 2,
+        "bookings": {}
+    },
+    {
+        "id": 9,
+        "Bus Name": " Konduskar Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Goa",
+        "Destination": "Pune",
+        "Fare": 1000,
+        "Coach Type": "Non AC",
+        "seats_available": 1,
+        "bookings": {}
+    },
+    {
+        "id": 10,
+        "Bus Name": "Balaji Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Goa",
+        "Destination": "Mumbai",
+        "Fare": 150,
+        "Coach Type": "AC",
+        "seats_available": 7,
+        "bookings": {}
+    },
+    {
+        "id": 11,
+        "Bus Name": "Balaji Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Goa",
+        "Destination": "Delhi",
+        "Fare": 250,
+        "Coach Type": "Non AC",
+        "seats_available": 0,
+        "bookings": {}
+    },
+    {
+        "id": 12,
+        "Bus Name": "Balaji Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Goa",
+        "Destination": "Nagpur",
+        "Fare": 450,
+        "Coach Type": "Non AC",
+        "seats_available": 11,
+        "bookings": {}
+    },
+    {
+        "id": 13,
+        "Bus Name": "Balaji Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Delhi",
+        "Destination": "Pune",
+        "Fare": 550,
+        "Coach Type": "Non AC",
+        "seats_available": 3,
+        "bookings": {}
+    },
+    {
+        "id": 14,
+        "Bus Name": "Balaji Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Delhi",
+        "Destination": "Mumbai",
+        "Fare": 650,
+        "Coach Type": "Non AC",
+        "seats_available": 10,
+        "bookings": {}
+    },
+    {
+        "id": 15,
+        "Bus Name": "Balaji Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Delhi",
+        "Destination": "Nagpur",
+        "Fare": 750,
+        "Coach Type": "Non AC",
+        "seats_available": 23,
+        "bookings": {}
+    },
+    {
+        "id": 16,
+        "Bus Name": "Balaji Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Nagpur",
+        "Destination": "Pune",
+        "Fare": 850,
+        "Coach Type": "Non AC",
+        "seats_available": 25,
+        "bookings": {}
+    },
+    {
+        "id": 17,
+        "Bus Name": "Balaji Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Nagpur",
+        "Destination": "Mumbai",
+        "Fare": 1050,
+        "Coach Type": "Non AC",
+        "seats_available": 4,
+        "bookings": {}
+    },
+    {
+        "id": 18,
+        "Bus Name": "MB Link Travels",
+        "Departure Time": "10:00 AM",
+        "Source": "Pune",
+        "Destination": "Mumbai",
+        "Fare": 1150,
+        "Coach Type": "AC",
+        "seats_available": 22,
+        "bookings": {}
+    }
+]
